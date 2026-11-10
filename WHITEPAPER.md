@@ -36,9 +36,9 @@ This is a pilot study of one checkpoint on one task with 16 failures. Section 7 
 
 **Level-wise entropy.** For level k with T_k positions, mean entropy is the average over positions of the Shannon entropy (in nats) of the model's code distribution, computed on the logits of the free-running generation before the argmax:
 
-```latex
+$$
 H_k = \frac{1}{T_k} \sum_{t=1}^{T_k} H\big(p(\mathrm{code}_{k,t} \mid \mathrm{codes}_{<k}, \mathrm{puzzle})\big)
-```
+$$
 
 We score entropy as a predictor of correctness with the area under the ROC curve (AUC) of the negated entropy, with correct generations as the positive class.
 
