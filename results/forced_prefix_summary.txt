@@ -1,0 +1,17 @@
+GATE: unforced level-by-level run reproduces net.generate on 100/100 puzzles (must be 100; otherwise the forced results below are not valid)
+group sizes: {'failures': 16, 'early-div correct': 29, 'late-div correct': 55} (earlier analysis: 16 / 29 / 55)
+
+--- Forced-prefix results (levels listed are overwritten with the encoder's codes) ---
+forced  all correct   failures fixed    early-div correct kept    late-div correct kept
+free    84/100        0/16              29/29                     55/55
+0       85/100        1/16              29/29                     55/55
+0-1     85/100        1/16              29/29                     55/55
+0-2     86/100        2/16              29/29                     55/55
+0-3     89/100        5/16              29/29                     55/55
+2       86/100        2/16              29/29                     55/55
+3       87/100        3/16              29/29                     55/55
+5-11    99/100        15/16             29/29                     55/55
+0-10    100/100       16/16             29/29                     55/55
+all     100/100       16/16             29/29                     55/55
+
+Saved results/forced_prefix.pkl
